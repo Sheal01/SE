@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dlg_fx.VereinSuchenController">
+   <children>
+      <AnchorPane layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="479.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="2.0" prefHeight="449.0" prefWidth="479.0" AnchorPane.bottomAnchor="-23.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" layoutY="53.0" prefHeight="449.0" prefWidth="271.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="157.0" text="FC Holzbein II" textFill="#c40e0e">
+                           <font>
+                              <Font name="Ebrima Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="293.0" prefWidth="271.0" spacing="30.0">
+                           <children>
+                              <VBox layoutX="232.0" layoutY="92.0" prefHeight="212.0" prefWidth="272.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="20.0" prefHeight="20.0" prefWidth="295.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <Label text="Suchkriterien">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="10.0" prefHeight="40.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="145.0" layoutY="185.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label layoutX="145.0" layoutY="190.0" prefHeight="29.0" prefWidth="100.0" text="Vereinsname" textOverrun="CLIP" />
+                                          <TextField fx:id="sVereinsname" layoutX="328.0" layoutY="185.0" prefHeight="25.0" prefWidth="170.0" snapToPixel="false" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="5.0" prefHeight="40.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="97.0" layoutY="185.0">
+                                       <children>
+                                          <Label layoutX="97.0" layoutY="190.0" prefHeight="30.0" prefWidth="101.0" text="Ansprechpartner" textOverrun="CENTER_ELLIPSIS" />
+                                          <TextField fx:id="sAnsprechpartner" layoutX="396.0" layoutY="185.0" prefHeight="25.0" prefWidth="170.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="10.0" prefHeight="40.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="27.0" prefWidth="278.0">
+                                       <children>
+                                          <Pane prefHeight="100.0" prefWidth="108.0" />
+                                          <Pane prefHeight="25.0" prefWidth="106.0" />
+                                          <Button fx:id="bSuchen" mnemonicParsing="false" onAction="#suchen" prefHeight="25.0" prefWidth="76.0" text="Suchen" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="20.0" prefHeight="20.0" prefWidth="297.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="30.0" prefWidth="150.0" style="-fx-font-style: bold;" text="Suchergebnisse">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="10.0" prefHeight="40.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <Label layoutX="145.0" layoutY="190.0" prefHeight="35.0" prefWidth="100.0" text="Vereinsname" />
+                                          <TextField fx:id="seVereinsname" layoutX="328.0" layoutY="185.0" prefHeight="25.0" prefWidth="170.0" snapToPixel="false" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="5.0" prefHeight="40.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <Label layoutX="97.0" layoutY="190.0" prefHeight="34.0" prefWidth="101.0" text="Ansprechpartner" textOverrun="CENTER_ELLIPSIS" />
+                                          <TextField fx:id="seAnsprechpartner" layoutX="396.0" layoutY="185.0" prefHeight="25.0" prefWidth="170.0" />
+                                       </children>
+                                    </HBox>
+                                    <Pane minHeight="10.0" prefHeight="40.0" prefWidth="200.0" />
+                                    <HBox prefHeight="29.0" prefWidth="278.0">
+                                       <children>
+                                          <Button fx:id="bAbbrechen" mnemonicParsing="false" onAction="#abbrechen" prefHeight="25.0" prefWidth="76.0" text="Abbrechen" />
+                                          <Pane prefHeight="29.0" prefWidth="118.0" />
+                                          <Button fx:id="bAendern" mnemonicParsing="false" onAction="#aendern" prefHeight="25.0" prefWidth="76.0" text="Ändern" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane minHeight="20.0" prefHeight="35.0" prefWidth="271.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" onAction="#loeschen" text="Ansprechpartner Löschen">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="lmeldungen" prefHeight="27.0" prefWidth="271.0" style="-fx-border-color: black;" text="Es liegen keine Meldungen vor!">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

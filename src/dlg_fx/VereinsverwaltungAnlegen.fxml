@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dlg_fx.VereinAnlegenController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" layoutY="53.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label contentDisplay="CENTER" text="FC Holzbein II" textFill="#c40e0e">
+                           <font>
+                              <Font name="Ebrima Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <VBox spacing="30.0">
+                           <children>
+                              <VBox layoutX="232.0" layoutY="92.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <Label text="Verein">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="145.0" layoutY="185.0">
+                                       <children>
+                                          <Label layoutX="145.0" layoutY="190.0" prefWidth="160.0" text="Vereinsname" />
+                                          <TextField fx:id="vereinsname" layoutX="328.0" layoutY="185.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <Label text="Ansprechpartner">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="87.0" layoutY="185.0">
+                                       <children>
+                                          <Label prefWidth="160.0" text="Vorname" />
+                                          <TextField fx:id="vorname" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutY="185.0">
+                                       <children>
+                                          <Label layoutY="190.0" prefWidth="160.0" text="Nachname" />
+                                          <TextField fx:id="nachname" layoutX="10.0" layoutY="185.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="97.0" layoutY="185.0">
+                                       <children>
+                                          <Label layoutX="97.0" layoutY="190.0" prefWidth="160.0" text="PLZ" />
+                                          <TextField fx:id="plz" layoutX="396.0" layoutY="185.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="172.0" layoutY="185.0">
+                                       <children>
+                                          <Label prefWidth="160.0" text="Ort" />
+                                          <TextField fx:id="ort" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="77.0" layoutY="185.0">
+                                       <children>
+                                          <Label prefWidth="160.0" text="Straße" />
+                                          <TextField fx:id="straße" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="250.0" layoutY="185.0">
+                                       <children>
+                                          <Label prefWidth="160.0" text="Hausnr." />
+                                          <TextField fx:id="hausnr" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="BASELINE_CENTER" spacing="150.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#abbrechen" prefWidth="100.0" text="Abbrechen" />
+                                    <Button mnemonicParsing="false" onAction="#anlegen" prefWidth="100.0" text="Anlegen" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
